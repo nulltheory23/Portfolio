@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education | Vineet</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     /* Base Reset */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Open Sans', sans-serif; background-color: #0f0f0f; color: #f5f5f5; line-height: 1.5; overflow-x: hidden; }
     a { color: gold; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    /* a:hover { text-decoration: underline; } */
 
     /* Navbar */
     .topbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; position: sticky; top: 0; background: #111; z-index: 10; }
@@ -45,6 +46,21 @@
       .edu-logo { margin-bottom: 12px; }
       .footer-inner { flex-direction: column; align-items: center; text-align: center; }
     }
+
+        .edu-link {
+      text-decoration: none;
+      display: block;
+    }
+
+    .edu-link:hover .edu-card {
+      background: #222;
+      transform: translateY(-5px);
+    }
+
+    .edu-card {
+      cursor: pointer;
+    }
+
   </style>
 </head>
 <body>
@@ -61,57 +77,60 @@
     </nav>
   </header>
 
+  
   <!-- Education Section -->
   <main>
     <section class="education-section section-pad">
       <h1>My Education</h1>
 
-      <div class="edu-card">
-        <img src="vit logo.jpg" alt="College Logo" class="edu-logo">
+      <div class="edu-card" style="pointer-events: none;">
+        <img src="vit logo.png" alt="College Logo" class="edu-logo">
         <div class="edu-details">
-          <h2>M.Tech Software Engineering</h2>
+          <h2>M.Tech in Software Engineering</h2>
           <p>VIT University, Chennai</p>
-          <p>2025 – 2030</p>
+          <p>July 2025 – 2030</p>
         </div>
       </div>
 
-      <div class="edu-card">
+      <div class="edu-card" style="pointer-events: none;">
         <img src="iitm logo.jpg" alt="IITM Logo" class="edu-logo">
         <div class="edu-details">
           <h2>B.S. in Data Science and Applications</h2>
           <p>Indian Institute of Technology Madras</p>
-          <p>2025 – Ongoing</p>
+          <p>September 2025 – Present</p>
         </div>
       </div>
 
-      <div class="edu-card">
-        <img src="cs50x logo.png" alt="Harvard Logo" class="edu-logo">
+
+      <div class="edu-card" style="pointer-events: none;">
+        <img src="ebenezer logo.png" alt="School Logo" class="edu-logo">
         <div class="edu-details">
-          <h2>CS50: Introduction to Computer Science</h2>
-          <p>Harvard University (edX)</p>
-          <p>2025 – Completed</p>
+          <h2>High School (Computer Science)</h2>
+          <p>Ebenezer Marcus, Pudur</p>
+          <p>2023 – 2025</p>
+          <p>Score: 90%</p>
         </div>
       </div>
-
 
     </section>
   </main>
+
 
   <!-- Footer Section -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-left">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:vineet.official33@gmail.com">vineet.official33@gmail.com</a></p>
-        <p>Phone: +91 99627 19350</p>
+        <p>Email: <a href="mailto:vineetb.work@gmail.com">vineetb.work@gmail.com</a></p>
+        <p>Phone: +91 9x6x7 x9x5x</p>
       </div>
       <div class="footer-right">
         <h3>Follow</h3>
         <ul class="social">
-          <li><a href="https://github.com/zephyric" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-          <li><a href="https://youtube.com/@zephyric.official" target="_blank">YouTube</a></li>
+          <li><a href="https://github.com/nulltheory23" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/vineet-b-819521315" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/0x_v33n33t" target="_blank">Instagram</a></li>
+          <li><a href="https://youtube.com/@thronescript" target="_blank">YouTube</a></li>
         </ul>
       </div>
     </div>

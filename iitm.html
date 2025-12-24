@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IITM — B.S. Data Science | Vineet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; background: #0f0f0f; color: #f5f5f5; line-height: 1.6; }
+    a { color: gold; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar */
+    .topbar { display:flex; justify-content:space-between; align-items:center; padding:16px 28px; background:#111; position:sticky; top:0; z-index:10; }
+    .brand { font-family:'Montserrat',sans-serif; font-weight:700; color:gold; font-size:1.35rem; }
+    .nav { display:flex; gap:20px; }
+    .nav-link { color:#fff; font-weight:600; padding:6px 10px; border-radius:6px; }
+    .nav-link.active { color:gold; background:rgba(255,255,255,0.03); }
+
+    /* Hero */
+    .hero { padding:60px 20px 30px; text-align:center; border-bottom: 1px solid rgba(255,255,255,0.03); }
+    .hero h1 { font-family:'Montserrat',sans-serif; color:gold; font-size:2.4rem; margin-bottom:8px; }
+    .hero p { color:#cfcfcf; max-width:900px; margin:0 auto; }
+
+    /* Main layout */
+    .container { max-width:1100px; margin:30px auto; padding:0 20px; display:grid; grid-template-columns: 2fr 1fr; gap:28px; align-items:start; }
+    .card { background:#151515; padding:22px; border-radius:12px; border:1px solid rgba(255,255,255,0.03); box-shadow:0 10px 30px rgba(0,0,0,0.6); }
+    .side-card { position:sticky; top:86px; }
+
+    h2 { font-family:'Montserrat',sans-serif; color:gold; margin-bottom:12px; font-size:1.25rem; }
+    p.lead { color:#d6d6d6; margin-bottom:14px; }
+
+    /* Curriculum list */
+    .curriculum { display:grid; gap:10px; }
+    .module { background:rgba(255,255,255,0.02); padding:12px 14px; border-radius:10px; color:#eaeaea; font-size:0.95rem; display:flex; justify-content:space-between; align-items:center; }
+
+    /* Project preview */
+    .project { display:flex; gap:12px; align-items:center; padding:12px; background: rgba(255,255,255,0.02); border-radius:10px; margin-bottom:10px; }
+    .project img { width:68px; height:48px; object-fit:cover; border-radius:8px; border:1px solid rgba(255,255,255,0.04); }
+
+    .meta { color:#bfbfbf; font-size:0.93rem; }
+
+    /* Footer */
+    .site-footer { background:#000; color:#ccc; padding:28px 18px; margin-top:36px; }
+    .footer-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .footer-bottom { text-align:center; margin-top:14px; color:rgba(255,255,255,0.6); font-size:0.9rem; }
+
+    /* Back link */
+    .back { display:inline-block; margin-top:18px; background:#1b1b1b; padding:10px 14px; border-radius:8px; color:gold; font-weight:600; }
+
+    @media (max-width:920px){
+      .container { grid-template-columns:1fr; }
+      .side-card { position:static; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="topbar">
+    <div class="brand">Vineet</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="education.html" class="nav-link active">Education</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Indian Institute of Technology Madras</h1>
+    <p class="lead">B.S. in Data Science and Applications — focused on rigorous data foundations, applied machine learning, and real-world problem solving. Current course work emphasizes statistical modeling, data systems, and large-scale computation.</p>
+  </section>
+
+  <!-- Content -->
+  <main class="container">
+    <!-- Left: Main article -->
+    <article class="card">
+      <h2>Program Overview</h2>
+      <p>
+        The B.S. program at IITM blends theoretical depth with practical engineering. It stresses mathematical rigor, algorithmic thinking, and strong software engineering practices so graduates can move seamlessly between research and industry roles.
+      </p>
+
+      <h2>Core Curriculum</h2>
+      <div class="curriculum">
+        <div class="module"><span>Probability & Statistics</span><span class="meta">Foundations</span></div>
+        <div class="module"><span>Linear Algebra & Optimization</span><span class="meta">Math for ML</span></div>
+        <div class="module"><span>Data Structures & Algorithms</span><span class="meta">Efficiency</span></div>
+        <div class="module"><span>Machine Learning</span><span class="meta">Supervised & Unsupervised</span></div>
+        <div class="module"><span>Databases & Big Data</span><span class="meta">Systems</span></div>
+        <div class="module"><span>Software Engineering</span><span class="meta">Design & Testing</span></div>
+      </div>
+
+      <h2 style="margin-top:22px;">Representative Projects</h2>
+      <div class="project">
+        <img src="iitm-project-1.jpg" alt="project">
+        <div>
+          <div style="font-weight:700;color:#fff">Traffic Prediction (ML)</div>
+          <div class="meta">Time-series modelling, LSTM, data pipeline</div>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="iitm-project-2.jpg" alt="project">
+        <div>
+          <div style="font-weight:700;color:#fff">Scalable Recommender</div>
+          <div class="meta">Approx. nearest neighbours, production deployment</div>
+        </div>
+      </div>
+
+      <h2 style="margin-top:22px;">Skills & Tools</h2>
+      <p class="meta">Python, NumPy, pandas, scikit-learn, PyTorch, SQL, Spark, Docker, Git, Linux. Focus on reproducible experiments and deployment-ready systems.</p>
+
+      <h2 style="margin-top:22px;">Professional Focus</h2>
+      <p>
+        At IITM I’m sharpening both research instincts and engineering discipline. I aim to bridge model quality and production reliability — building solutions that are academically sound and useful in production.
+      </p>
+
+      <a href="education.html" class="back">← Back to Education</a>
+    </article>
+
+    <!-- Right: Sidebar -->
+    <aside class="card side-card">
+      <img src="iitm-logo.jpg" alt="IITM logo" style="width:100%; border-radius:8px; margin-bottom:14px; object-fit:cover; border:1px solid rgba(255,255,255,0.04)">
+      <h2>Quick Facts</h2>
+      <p class="meta">Location: Chennai, India<br>Program: B.S. Data Science & Applications<br>Start: Sep 2025 — Present</p>
+
+      <h2 style="margin-top:18px;">Selected Coursework</h2>
+      <ul style="list-style:none; padding-left:0; color:#dcdcdc; margin-top:8px;">
+        <li>Statistical Methods</li>
+        <li>ML Systems</li>
+        <li>Advanced Databases</li>
+        <li>Optimization</li>
+      </ul>
+
+      <h2 style="margin-top:18px;">Contact / Mentors</h2>
+      <p class="meta">Prof. X (ML) — office hours: Tue 3–4pm<br>Student groups: DS Club, Coding Circle</p>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h3 style="color:#fff; font-family:'Montserrat',sans-serif">Contact</h3>
+        <p style="color:#cfcfcf">Email: <a href="mailto:vineet.official33@gmail.com">vineet.official33@gmail.com</a></p>
+      </div>
+      <div>
+        <h3 style="color:#fff; font-family:'Montserrat',sans-serif">Follow</h3>
+        <p><a href="https://github.com/zephyric" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/vineet-b-819521315" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Vineet | All for the glory of Jesus Christ ✝️</div>
+  </footer>
+
+</body>
+</html>

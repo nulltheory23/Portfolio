@@ -4,7 +4,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Open Sans', sans-serif; background-color: #0f0f0f; color: #f5f5f5; line-height: 1.5; overflow-x: hidden; }
 a { color: gold; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* a:hover { text-decoration: underline; } */
 
 /* ===========================
    Navbar
@@ -35,7 +35,10 @@ a:hover { text-decoration: underline; }
 =========================== */
 .skills h2 { font-family: 'Montserrat', sans-serif; margin-bottom: 10px; }
 .skills .muted { text-align: center; color: #ccc; margin-bottom: 18px; }
-.skills-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(110px,1fr)); gap: 18px; align-items: center; }
+.skills-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(8, 1fr); gap: 18px; justify-content: center; }
+.skills-grid .skill:nth-last-child(-n+2) {grid-column: span 1;}
+.skills-grid .skill:nth-child(9) {grid-column: 4;}
+.skills-grid .skill:nth-child(10) {grid-column: 5;}
 .skill { background: rgba(255,255,255,0.02); padding: 18px; border-radius: 12px; display: flex; align-items: center; justify-content: center; height: 80px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
 .skill img { max-width: 80%; max-height: 48px; object-fit: contain; opacity: 0.95; }
 
@@ -69,3 +72,15 @@ a:hover { text-decoration: underline; }
   .edu-logo { margin-bottom: 12px; }
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
 }
+
+
+.project-link {
+  text-decoration: none;
+  display: block;
+}
+
+.project-link:hover .project-card {
+  background: #222;
+  transform: translateY(-5px);
+}
+
